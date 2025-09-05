@@ -1,43 +1,144 @@
 # 📘 Assignment: Enhancing HTML5 Content & Mastering Forms
 
-## Overview
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Page</title>
+</head>
+<body>
 
-This assignment focuses on elevating your HTML5 skills by working with advanced content elements and mastering the creation, structure, and validation of web forms. You will practice using lists, tables, and media to enrich page content, and then dive deep into building dynamic, user-friendly forms powered by native HTML5 features.
+  <header>
+    <h1>Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, embedded media, and a complete HTML5 form.</p>
+  </header>
 
-## Objectives
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Digital Marketing</li>
+      <li>Data Analytics</li>
+    </ul>
 
-You are expected to demonstrate the ability to:
+    <h3>Steps to Get Started</h3>
+    <ol>
+      <li>Sign up for an account</li>
+      <li>Choose your desired service</li>
+      <li>Submit your request</li>
+    </ol>
+  </section>
 
-* Use lists and tables effectively to organize content for clarity and accessibility.
-* Embed media content such as images, audio, or video using semantic HTML5 elements.
-* Build structured HTML5 forms that are both usable and visually intuitive.
-* Apply various HTML5 form attributes to improve user interaction.
-* Use built-in validation techniques to minimize incorrect data input without relying on JavaScript.
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Pricing Table</h2>
+    <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>$10/month</td>
+          <td>Email Support</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$25/month</td>
+          <td>Email + Chat Support</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>$50/month</td>
+          <td>24/7 Support</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-## Instructions
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Media Showcase</h2>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Sample Image" width="300">
 
-Design a simple multi-section web page that showcases the use of lists, tables, and media, followed by a complete HTML5 form. The page should reflect thoughtful structure, usability, and clarity.
+    <h3>Audio Example</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-Your form should include various input types, make use of labels and fieldsets for accessibility, and apply HTML5 validation rules through attributes like `required`, `type`, `minlength`, `pattern`, and others.
+    <h3>Video Example</h3>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-Avoid using JavaScript for validation—rely solely on native HTML5 capabilities.
+  <!-- Section 4: Form -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
 
-## Deliverables
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="on"><br><br>
 
-Submit a single HTML file named `enhanced-form.html`. It should include:
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
 
-* Well-structured content using lists, tables, and media.
-* A complete HTML5 form including a variety of input fields.
-* Correct use of form attributes such as `placeholder`, `required`, `autocomplete`, and `readonly`.
-* HTML5 validation features implemented correctly across all relevant fields.
-* A clear, accessible layout using semantic tags.
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
 
-## Tips
+      <fieldset>
+        <legend>Account Details</legend>
 
-* Proper and meaningful use of lists, tables, and media.
-* Clarity and accessibility of form structure.
-* Correct use of form elements and attributes.
-* Effective application of native HTML5 validation.
-* Clean, well-indented, and maintainable HTML code.
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="plan">Choose Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">-- Select a Plan --</option>
+          <option value="basic">Basic</option>
+          <option value="pro">Pro</option>
+          <option value="enterprise">Enterprise</option>
+        </select><br><br>
+
+        <p>Subscribe to newsletter?</p>
+        <label><input type="radio" name="newsletter" value="yes" required> Yes</label>
+        <label><input type="radio" name="newsletter" value="no"> No</label><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Demo Page</p>
+  </footer>
+
+</body>
+</html>
 
 
